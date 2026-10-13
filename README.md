@@ -1,30 +1,51 @@
-# About
+# Super Mario Clone
 
-Super Mario game built in Javascript using Kaboom.js
+A browser platformer built with JavaScript and Kaboom.js, following [Ania Kubów's tutorial](https://youtu.be/2nucjefSr6I).
 
-# Levels
+This learning project explores sprite loading, collision behavior, level maps, and keyboard-driven gameplay. The tutorial foundation is credited below.
 
-Level1
-![Screenshot](gameplay_screenshots/level1.jpg)
-Level2
-![Screenshot](gameplay_screenshots/level2.jpg)
-Level3 
-![Screenshot](gameplay_screenshots/level3.jpg)
+## Play locally
 
-# Setup
+Open `index.html` in a browser. An internet connection is required because the page loads Kaboom.js 0.5.0 from `kaboomjs.com`.
 
-Download the project and open index.html
+For a local HTTP server, run from the repository root:
 
-# How to play
+```bash
+python -m http.server 8000
+```
 
-In order to win the game you have to help Mario save Princess Peach.
-Use space key to jump and left and right arrow keys to move.
+Then open `http://localhost:8000/`. If the external Kaboom script is unavailable, the game cannot initialize.
 
-Kill the enemies by jumping on top of them and get special surprises by bumping Marios head into blocks marked with a question mark.
-Eating mushrooms makes Mario grow, but it's only temporary.
-Sliding down the pipe leads you to the next level.
+## Controls
 
-# Credits
+| Key | Action |
+| --- | --- |
+| Left / right arrow | Move |
+| Space | Jump |
 
-The base for the game was created by coding along @kubowania's (https://www.github.com/kubowania)'s YouTube tutorial. You can find it here: https://youtu.be/2nucjefSr6I
+Jump onto enemies, hit question blocks, collect mushrooms, and use pipes to move between levels. Mushrooms temporarily increase Mario's size.
 
+## Level previews
+
+### Level 1
+
+![Level 1 gameplay](gameplay_screenshots/level1.jpg)
+
+### Level 2
+
+![Level 2 gameplay](gameplay_screenshots/level2.jpg)
+
+### Level 3
+
+![Level 3 gameplay](gameplay_screenshots/level3.jpg)
+
+## Code map
+
+- `index.html` loads Kaboom and the game.
+- `mario.js` defines sprites, scenes, level maps, and gameplay.
+- `mario.css` contains page styling.
+- `sprites/` contains game assets.
+
+## Credits
+
+The base was created by coding along with [Ania Kubów / @kubowania](https://github.com/kubowania)'s [YouTube tutorial](https://youtu.be/2nucjefSr6I). Mario characters and branding belong to their respective owners. This is an educational fan project.
